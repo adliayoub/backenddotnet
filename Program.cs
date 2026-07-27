@@ -86,4 +86,12 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
-app.Run();
+// ---- Listen on all network interfaces (required for Railway/containerized deployments) ----
+var urls = Environment.GetEnvironmentVariable("ASPNETCORE_URLS");
+if (string.IsNullOrWhiteSpace(urls))
+{
+    var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+    urls = $"http://0.0.0.0:{port}";
+}
+
+app.Run(urls);
