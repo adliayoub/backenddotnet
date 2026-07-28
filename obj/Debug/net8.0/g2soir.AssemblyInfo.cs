@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("g2soir")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8e056cab8af7383b48bc1f91858788f8b5913d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("g2soir")]
 [assembly: System.Reflection.AssemblyTitleAttribute("g2soir")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
